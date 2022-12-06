@@ -28,6 +28,7 @@
     margin-right: 10px;
 }
 
+
 .navbar-login-redirect span>a{
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
@@ -52,11 +53,13 @@
 
 
 .navbar-principal ul>li {
-    margin-right: 10px;
+    
     text-justify: center;
 }
 
 .navbar-principal ul>li>a {
+    padding: 0px 5px;
+    border-right: 1px solid #c5c5c5;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -184,6 +187,19 @@ textarea{
     text-indent: 8px;
     border-radius: 7px;
     margin-bottom: 10px;
+}
+
+fieldset{
+    border: none;
+    padding: 2px;
+}
+
+form label, form legend {
+	display: block;
+	text-align: left;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: 0 0 10px;
 }
 
 footer{

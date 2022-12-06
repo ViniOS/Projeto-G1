@@ -18,7 +18,7 @@
                     <li><a href="#" style="color: #3E831E">ge</a></li>
                     <li><a href="#" style="color: #FF7F00">gshow</a></li>
                     <li><a href="#" style="color: #fb0234">globoplay</a></li>
-                    <li><a href="#" style="color: #1e4c9a">o globo</a></li>
+                    <li><a href="#" style="color: #1e4c9a; border:none;">o globo</a></li>
                 </ul>
             </div>
             <div class="navbar-login-redirect">
@@ -80,9 +80,22 @@
             </h2>
 
             <form>
-                <input type="text" name="nome" class="inp" placeholder="Nome" >
-                <input type="email" name="email"  class="inp" placeholder="E-mail">
-                <textarea name="text" id="" cols="50" rows="10" placeholder="Digite sua mensagem aqui!"></textarea>
+                <input type="text" name="nome" class="inp" placeholder="Nome completo"  required>
+                <input type="email" name="email"  class="inp" placeholder="E-mail" required>
+                <textarea name="text" id="" cols="50" rows="10" placeholder="Digite sua mensagem aqui!" required></textarea>
+                <fieldset>
+					<legend>De onde está acessando?</legend>
+
+					<label for="radio-Desktop"><input type="radio" name="contato" value="Desktop" id="radio-Desktop" class="group_radio"> Desktop</label>
+
+                    <label for="radio-Notebook"><input type="radio" name="contato" value="Notebook" id="radio-Notebook" checked class="group_radio"> Notebook </label>
+					
+					<label for="radio-Televisão"><input type="radio" name="contato" value="Televisão" id="radio-Televisão" class="group_radio" > Televisão</label>
+					
+					<label for="radio-Celular/Tablet"><input type="radio" name="contato" value="Celular/Tablet" id="radio-Celular/Tablet" checked class="group_radio"> Celular/Tablet</label>
+
+                    <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+				</fieldset>
                 <button style="display: block;">enviar</button>
             </form>
         </div>
@@ -92,9 +105,9 @@
         <div class="boxs" id="column1">
             <p>Contato com o desenvolvedor</p>
             <ul>
-                <li><img src="img/icone-facebook.png" alt="face_icon"><a href="https://www.facebook.com/profile.php?id=100003680155376" target="_blank">Facebook</a></li>
+                <li><img src="img/o-email.png" alt="email_icon"><a href="mailto:vini.oli.santana@gmail.com" target="_blank">vini.oli.santana@gmail.com</a></li>
                 <li><img src="img/icone-github.png" alt="github_icon"><a href="" target="_blank">Github</a></li>
-                <li><img src="img/icone-instagram.png" alt="insta_icon"><a href="https://www.instagram.com/viniciuso_santana/" target="_blank">Instagram</a></li>
+                <li><img src="img/papeis.png" alt="Currículo_icon"><a href="https://docs.google.com/document/d/1F4iCUj8Be0dKBkL0cruP65pF7cStgi2q/edit?usp=share_link&ouid=101226987186091092706&rtpof=true&sd=true" target="_blank">Currículo</a></li>
                 <li><img src="img/icone-linkedin.png" alt="linkedin_icon"><a href="" target="_blank">Linkedin</a></li>
             </ul>
         </div>
@@ -102,7 +115,12 @@
             <p>Site criado por <a href="https://github.com/ViniOS" target="_blank">Vinícius De Oliveira Santana</a></p>
         </div>
         <div class="boxs" id="column3">
-
+            <ul>
+                <li><a href="#">princípios editoriais</a></li>
+                <li><a href="#">politica de privacidade</a></li>
+                <li><a href="#">minha conta</a></li>
+                <li><a href="#">anuncie conosco</a></li>
+            </ul>
         </div>
     </footer>
 </body>
